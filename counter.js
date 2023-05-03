@@ -3,8 +3,6 @@ const buttons = document.querySelectorAll(".button");
 
 let count = 0;
 
-let a;
-
 buttons.forEach((button) => {
   button.addEventListener("click", (event) => {
     const styles = event.currentTarget.classList;
@@ -16,6 +14,7 @@ buttons.forEach((button) => {
       );
       addFx.play();
     }
+
     if (count === 101 && styles.contains("add")) {
       count = 100;
       counter.classList.add("bounce");
@@ -27,6 +26,7 @@ buttons.forEach((button) => {
       );
       addFx.play();
     }
+
     if (styles.contains("remove") && count >= 0) {
       count--;
       const removeFx = new Audio(
@@ -34,6 +34,7 @@ buttons.forEach((button) => {
       );
       removeFx.play();
     }
+
     if (count === -1 && styles.contains("remove")) {
       count = 0;
       counter.classList.add("bounce");
@@ -45,6 +46,7 @@ buttons.forEach((button) => {
       );
       addFx.play();
     }
+
     if (styles.contains("reset")) {
       count = 0;
       const resetFx = new Audio(
@@ -52,6 +54,7 @@ buttons.forEach((button) => {
       );
       resetFx.play();
     }
+
     if (count === 69) {
       counter.style.color = "hotpink";
       const sixtyNineFx = new Audio(
