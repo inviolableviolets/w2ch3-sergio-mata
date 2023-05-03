@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 0px 5px 10px black;
+
+}
+
+body {
+    background-image: url('https://camo.githubusercontent.com/b5af46a4f99c2f0d5085bc8c5a7ad245b6eb234f6433dc7c3fd1e89ac542cd6c/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f313933383131382f3433343036342f30316134306630612d616631322d313165322d393835352d3761386231346536643162322e706e67');
+    background-size:cover;
+    background-position: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3em;
+}
+
+span {
+    font-size: 2em;
+    padding: .5em;
+    color: #85f374;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+    background: transparent;
+    color:#85f374;
+    outline: none;
+    border: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    transition: .1s ease-in-out;
+    transform: scale(1.05);
+    color: #FAB01D;
+}
+
+.reset{
+    background: transparent;
+    color: white;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.reset:hover{
+  transition: .1s ease-in-out;
+  transform: scale(1.05);
+  color: white;
+}
+
+.bounce {
+  animation: bounce 0.2s ease;
+  position: relative;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translate(0 );
+  }
+  50% {
+    transform: translate(.2em);
+    color: #FAB01D;
+  }
+  100% {
+    transform: translate(-.2em);
+  }
+}
